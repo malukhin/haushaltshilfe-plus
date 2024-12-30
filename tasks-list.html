@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Документ без названия</title>
+<link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<section class="container">
+		<h1 class="head bold">Tasks</h1>
+		<div class="task_list">
+			<article>
+				<a href="tasks-item.html" class="task_list-item">
+					<span class="task_info">
+						<span class="task_info-status bearbeitung">In Bearbeitung</span>
+						<span class="task_info-client">Max Musterman</span>
+					</span>
+					<h3 class="task_list-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h3>
+					<span class="task_list-dsc">Zugewiesene Zeit: 20</span>
+				</a>
+			</article>
+			<article>
+				<a href="tasks-item.html" class="task_list-item">
+					<span class="task_info">
+						<span class="task_info-status anderungen">Änderungen</span>
+						<span class="task_info-client">Max Musterman Musterman Musterman Musterman</span>
+					</span>
+					<h3 class="task_list-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h3>
+					<span class="task_list-dsc">Zugewiesene Zeit: 20</span>
+				</a>
+			</article>
+			<article>
+				<a href="tasks-item.html" class="task_list-item">
+					<span class="task_info">
+						<span class="task_info-status genehmigt">Genehmigt</span>
+						<span class="task_info-client">Max Musterman Musterman Musterman Musterman</span>
+					</span>
+					<h3 class="task_list-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h3>
+					<span class="task_list-dsc">Zugewiesene Zeit: 20</span>
+				</a>
+			</article>
+			<article>
+				<a href="tasks-item.html" class="task_list-item">
+					<span class="task_info">
+						<span class="task_info-status abgebrochen">Abgebrochen</span>
+						<span class="task_info-client">Max Musterman Musterman Musterman Musterman</span>
+					</span>
+					<h3 class="task_list-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h3>
+					<span class="task_list-dsc">Zugewiesene Zeit: 20</span>
+				</a>
+			</article>
+			<article>
+				<a href="tasks-item.html" class="task_list-item">
+					<span class="task_info">
+						<span class="task_info-status erledigt">Erledigt</span>
+						<span class="task_info-client">Max Musterman Musterman Musterman Musterman</span>
+					</span>
+					<h3 class="task_list-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h3>
+					<span class="task_list-dsc">Zugewiesene Zeit: 20</span>
+				</a>
+			</article>
+		</div>
+	</section>
+	<div id="footer_menu" class="footer_menu">
+		<div class="container">
+			<nav class="footer_menu-nav">
+				<a href="#" class="footer_menu-item active">
+					<span class="footer_menu-icon-wrap">
+						<svg class="footer_menu-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#task-checklist"></use>
+						</svg>
+					</span>
+					Tasks
+				</a>
+				<a href="#" class="footer_menu-item">
+					<span class="footer_menu-icon-wrap">
+						<svg class="footer_menu-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#calendar-clock"></use>
+						</svg>
+					</span>
+					Calendar
+				</a>
+				<a href="#" class="footer_menu-item">
+					<span class="footer_menu-icon-wrap">
+						<svg class="footer_menu-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#member-list"></use>
+						</svg>
+					</span>
+					Clients
+				</a>
+			</nav>
+		</div>
+	</div>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const footerMenu = document.getElementById('footer_menu');
+			if (footerMenu) {
+				const footerMenuHeight = footerMenu.offsetHeight;
+				document.body.style.setProperty('--footer_menu_height', `${footerMenuHeight}px`);
+			}
+		});
+	</script>
+	<script src="assets/lib/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

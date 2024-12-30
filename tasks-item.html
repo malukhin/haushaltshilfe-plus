@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Документ без названия</title>
+<link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<article class="container task">
+		<header class="task_bar">
+			<a role="button" class="task_bar-back me-auto" href="tasks-list.html">
+				<svg class="task_bar-icon" viewBox="0 0 24 24">
+					<use xlink:href="assets/image/sprite.svg#arrow-small-left"></use>
+				</svg>
+				<span class="task_bar-back-title">Tasks</span>
+			</a>
+			<button type="button" class="task_bar-button">
+				<svg class="task_bar-icon" viewBox="0 0 24 24">
+					<use xlink:href="assets/image/sprite.svg#shuffle"></use>
+				</svg>
+			</button>
+			<button type="button" class="task_bar-button">
+				<svg class="task_bar-icon" viewBox="0 0 24 24">
+					<use xlink:href="assets/image/sprite.svg#calendar-plus"></use>
+				</svg>
+			</button>
+			<button type="button" class="task_bar-button more" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				<svg class="task_bar-icon" viewBox="0 0 24 24">
+					<use xlink:href="assets/image/sprite.svg#menu-dots-vertical"></use>
+				</svg>
+			</button>
+			<div>
+			</div>
+			<ul class="collapse task_bar-menu" id="collapseExample">
+				<li>
+					<button type="button" class="task_bar-menu-link">
+						<svg class="task_bar-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#calendar-plus"></use>
+						</svg>
+						Select Date &amp; Time
+					</button>
+				</li>
+				<li>
+					<button type="button" class="task_bar-menu-link">
+						<svg class="task_bar-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#shuffle"></use>
+						</svg>
+						Split Task
+					</button>
+				</li>
+				<li>
+					<button type="button" class="task_bar-menu-link">
+						<svg class="task_bar-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#bookmark"></use>
+						</svg>
+						Change Status
+					</button>
+				</li>
+				<li>
+					<button type="button" class="task_bar-menu-link">
+						<svg class="task_bar-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#check-circle"></use>
+						</svg>
+						Confirm
+					</button>
+				</li>
+			</ul>
+		</header>
+		<span class="task_info">
+			<span class="task_info-status bearbeitung">In Bearbeitung</span>
+			<span class="task_info-client">Max Musterman</span>
+		</span>
+		<h1 class="task-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h1>
+		<div class="row g-4">
+			<div class="col-md-6">
+				<section class="task-box">
+					<h2 class="task-h2">Task Information</h2>
+					<ul>
+						<li><strong>Status:</strong> Änderungen</li>
+						<li><strong>Date:</strong> 26 October 2024 – 14:00</li>
+						<li><strong>Zeit:</strong> 20</li>
+					</ul>
+				</section>
+			</div>
+			<div class="col-md-6">
+				<section class="task-box">
+					<h2 class="task-h2">Client Information</h2>
+					<ul>
+						<li><strong>Name:</strong> Max Musterman</li>
+						<li><strong>Phone:</strong> <a href="tel:+49 123 12345677">+49 123 12345677</a></li>
+						<li><strong>Adress:</strong> <a href="https://www.google.com/maps/place/Ob.+K%C3%B6nigsstra%C3%9Fe+4,+34117+Kassel" target="_blank">Obere Königsstraße 4, Kassel</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<section>
+			<h2 class="task-h2 mt-4 pt-2">Related Tasks</h2>
+			<div class="task_list">
+				<article>
+					<a href="tasks-item.html" class="task_list-item">
+						<span class="task_info">
+							<span class="task_info-status bearbeitung">In Bearbeitung</span>
+						</span>
+						<h3 class="task_list-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h3>
+						<span class="task_list-dsc">Zugewiesene Zeit: 20</span>
+					</a>
+				</article>
+				<article>
+					<a href="tasks-item.html" class="task_list-item">
+						<span class="task_info">
+							<span class="task_info-status anderungen">Änderungen</span>
+						</span>
+						<h3 class="task_list-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h3>
+						<span class="task_list-dsc">Zugewiesene Zeit: 20</span>
+					</a>
+				</article>
+				<article>
+					<a href="tasks-item.html" class="task_list-item">
+						<span class="task_info">
+							<span class="task_info-status genehmigt">Genehmigt</span>
+						</span>
+						<h3 class="task_list-title">S00004 - [001] Alltags- und Haushaltsservice pro Stunde (SGB XI)</h3>
+						<span class="task_list-dsc">Zugewiesene Zeit: 20</span>
+					</a>
+				</article>
+				
+			</div>
+		</section>
+	</article>
+	<div id="footer_menu" class="footer_menu">
+		<div class="container">
+			<nav class="footer_menu-nav">
+				<a href="#" class="footer_menu-item active">
+					<span class="footer_menu-icon-wrap">
+						<svg class="footer_menu-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#task-checklist"></use>
+						</svg>
+					</span>
+					Tasks
+				</a>
+				<a href="#" class="footer_menu-item">
+					<span class="footer_menu-icon-wrap">
+						<svg class="footer_menu-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#calendar-clock"></use>
+						</svg>
+					</span>
+					Calendar
+				</a>
+				<a href="#" class="footer_menu-item">
+					<span class="footer_menu-icon-wrap">
+						<svg class="footer_menu-icon" viewBox="0 0 24 24">
+							<use xlink:href="assets/image/sprite.svg#member-list"></use>
+						</svg>
+					</span>
+					Clients
+				</a>
+			</nav>
+		</div>
+	</div>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const footerMenu = document.getElementById('footer_menu');
+			if (footerMenu) {
+				const footerMenuHeight = footerMenu.offsetHeight;
+				document.body.style.setProperty('--footer_menu_height', `${footerMenuHeight}px`);
+			}
+		});
+	</script>
+	<script src="assets/lib/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
