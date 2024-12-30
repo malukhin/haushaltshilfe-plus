@@ -14,9 +14,10 @@ $s: var(--secondary);
 	
 	--index: calc(1vw + 1vh);
 	--block-padding: 60px;
-	--border-radius: 16px;
 
 	// bootstrap
+	--bs-border-radius: 16px;
+	--bs-border-radius-lg: var(--bs-border-radius);
 	--bs-border-color: rgba(0,0,0,.1);
 }
 body {
@@ -93,8 +94,8 @@ img,svg{
 		margin-bottom: .7em;
 	}
 	&-box{
-		border-radius: var(--border-radius);
-		padding: var(--border-radius);
+		border-radius: var(--bs-border-radius);
+		padding: var(--bs-border-radius);
 		background: rgba(0,0,0,.05);
 		ul{
 			list-style-type: none;
@@ -116,6 +117,16 @@ img,svg{
 			&:hover,&:visited{
 				text-decoration: none;
 				color: $b;
+			}
+		}
+	}
+	.btn-group{
+		.btn{
+			width: 50%;
+			max-width: 220px;
+			min-width: 140px;
+			&:not(:first-child){
+				border-left: 1px solid rgba(0,0,0,.2);
 			}
 		}
 	}
@@ -192,7 +203,7 @@ img,svg{
 		padding: 0;
 		margin: 0;
 		box-shadow: 0 0 16px 0 rgba(0,0,0,.2);
-		border-radius: var(--border-radius);
+		border-radius: var(--bs-border-radius);
 		background: #fff;
 		overflow: hidden;
 		li:not(:last-child) .task_bar-menu-link{

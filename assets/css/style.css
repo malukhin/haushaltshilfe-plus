@@ -6,7 +6,8 @@
   --h1-size: clamp(24px, calc(var(--index) * 2), 38px);
   --index: calc(1vw + 1vh);
   --block-padding: 60px;
-  --border-radius: 16px;
+  --bs-border-radius: 16px;
+  --bs-border-radius-lg: var(--bs-border-radius);
   --bs-border-color: rgba(0,0,0,.1); }
 
 body {
@@ -67,8 +68,8 @@ img, svg {
   font-size: 18px;
   margin-bottom: .7em; }
 .task-box {
-  border-radius: var(--border-radius);
-  padding: var(--border-radius);
+  border-radius: var(--bs-border-radius);
+  padding: var(--bs-border-radius);
   background: rgba(0, 0, 0, 0.05); }
   .task-box ul {
     list-style-type: none;
@@ -87,6 +88,12 @@ img, svg {
     .task-box a:hover, .task-box a:visited {
       text-decoration: none;
       color: var(--black); }
+.task .btn-group .btn {
+  width: 50%;
+  max-width: 220px;
+  min-width: 140px; }
+  .task .btn-group .btn:not(:first-child) {
+    border-left: 1px solid rgba(0, 0, 0, 0.2); }
 
 .task_info {
   display: flex;
@@ -150,7 +157,7 @@ img, svg {
     padding: 0;
     margin: 0;
     box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
+    border-radius: var(--bs-border-radius);
     background: #fff;
     overflow: hidden; }
     .task_bar-menu li:not(:last-child) .task_bar-menu-link {
